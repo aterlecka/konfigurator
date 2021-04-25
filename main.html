@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Konfigurator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="active.js"></script>
+
+</head> 
+
+<body>
+
+
+<div class="mobile-container">
+
+
+<div class="nav">
+  <a href="#home" class="active">1. Tkanina </a>
+     <p id="demo"></p>
+     <p id="demo-describe"></p>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction3()">
+Wybieram
+  </a>
+
+</div>
+
+
+
+
+
+<div class="topnav">
+  <a  href="javascript:void(0);" class="active" onclick="myFunction()">2. Rodzaj tkaniny </a>
+  <div id="myLinks">
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')">Wszystkie </button>
+  <button class="btn" onclick="filterSelection('welur')">Welur </button>
+  <button class="btn" onclick="filterSelection('plecionka')"> Plecionka </button>
+  <button class="btn" onclick="filterSelection('ekoskora')"> Ekoskóra </button>
+  <button class="btn" onclick="filterSelection('nobuk')"> Nobuk </button>
+    <button class="btn" onclick="filterSelection('mikrofibra')"> Mikrofibra </button>
+</div>
+
+
+
+<div class="container">
+
+
+  <div class="filterDiv colors welur" onclick="myFunctionWelurOne()"><img class="images" src="gallery/welur1.jpg"><p class="describe">Welur-1</p>  </div>
+  <div class="filterDiv colors welur" onclick="myFunctionWelurTwo()"><img class="images" src="gallery/welur2.jpg"><p class="describe">Welur-2</p>  </div>
+  <div class="filterDiv colors welur" onclick="myFunctionWelurThree()"><img class="images" src="gallery/welur3.jpg"><p class="describe">Welur-3</p> </div>
+
+  <div class="filterDiv plecionka" onclick="myFunctionPlecionkaOne()"><img class="images" src="gallery/plecionka1.jpg"><p class="describe">Plecionka-1</p></div>
+  <div class="filterDiv plecionka" onclick="myFunctionPlecionkaTwo()"><img class="images" src="gallery/plecionka2.jpg"><p class="describe">Plecionka-2</p></div>
+  <div class="filterDiv plecionka"onclick="myFunctionPlecionkaThree()"><img class="images" src="gallery/plecionka3.jpg"><p class="describe">Plecionka-3</p></div>
+
+  <div class="filterDiv colors ekoskora" onclick="myFunctionEkoOne()"><img class="images" src="gallery/ekoskora1.jpg"><p class="describe">Ekoskóra-1</p></div>
+  <div class="filterDiv colors ekoskora" onclick="myFunctionEkoTwo()"><img class="images" src="gallery/ekoskora2.jpg"><p class="describe">Ekoskóra-2</p></div>
+  <div class="filterDiv colors ekoskora" onclick="myFunctionEkoThree()"><img class="images" src="gallery/ekoskora3.jpg"><p class="describe">Ekoskóra-3</p></div>
+
+
+  <div class="filterDiv colors nobuk" onclick="myFunctionNobukOne()"><img class="images" src="gallery/nobuk1.jpg"><p class="describe">Nobuk-1</p></div>
+  <div class="filterDiv colors nobuk" onclick="myFunctionNobukTwo()"><img class="images" src="gallery/nobuk2.jpg"><p class="describe">Nobuk-2</p></div>
+  <div class="filterDiv colors nobuk" onclick="myFunctionNobukThree()"><img class="images" src="gallery/nobuk3.jpg"><p class="describe">Nobuk-3</p></div>
+
+
+  <div class="filterDiv colors mikrofibra" onclick="myFunctionMikroOne()"><img class="images" src="gallery/mikrofibra1.jpg"><p class="describe">Mikrofibra-1</p></div>
+  <div class="filterDiv colors mikrofibra" onclick="myFunctionMikroTwo()"><img class="images" src="gallery/mikrofibra2.jpg"><p class="describe">Mikrofibra-2</p></div>
+  <div class="filterDiv colors mikrofibra" onclick="myFunctionMikroThree()"><img class="images" src="gallery/mikrofibra3.jpg"><p class="describe">Mikrofibra-3</p></div>
+ 
+</div>
+  </div>
+  <a href="javascript:void(0);" class="icon">
+   Wybieram
+  </a>
+</div> 
+
+ <div class="topnav2">
+
+    <a  href="javascript:void(0);" class="active" onclick="myFunction2()">2. Rodzaj kanapy </a>
+      <div id="myLinks2">
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection2('all')">Wszystkie </button>
+  <button class="btn" onclick="filterSelection2('naroznik')"> Narożnik </button>
+  <button class="btn" onclick="filterSelection2('wersalka')"> Wersalka </button>
+  <button class="btn" onclick="filterSelection2('nierozkladana')"> Nierozkładana</button>
+</div>
+
+<div class="container">
+
+  <div id="myMod1" class="filterDiv naroznik" onclick="myFunctionNaroznikOne()"><img class="images-2" src="gallery/naroznik1.jpg"><a class="ikony" href="#"></a><p class="describe2-1">Narożnik-1</p></div>
+  <div id="myMod2" class="filterDiv naroznik" onclick="myFunctionNaroznikTwo()"><img class="images-2" src="gallery/naroznik2.jpg"><a class="ikony" href="#"></a><p class="describe2">Narożnik-2</p></div>
+ 
+  <div id="myMod3" class="filterDiv colors wersalka" onclick="myFunctionWersalkaOne()"><img class="images-2" src="gallery/wersalka1.jpg"><a class="ikony" href="#"></a><p class="describe2">Wersalka-1</p></div>
+  <div id="myMod4" class="filterDiv colors wersalka" onclick="myFunctionWersalkaTwo()"><img class="images-2" src="gallery/wersalka2.jpg"><a class="ikony" href="#"></a><p class="describe2">Wersalka-2</p></div>
+
+
+  <div id="myMod5" class="filterDiv colors nierozkladana" onclick="myFunctionNierozkladanaOne()"><img class="images-2" src="gallery/nierozkladana1.jpg"><a class="ikony" href="#"></a><p class="describe2">Nierozkładana-1</p></div>
+  <div id="myMod6" class="filterDiv colors nierozkladana" onclick="myFunctionNierozkladanaTwo()"><img class="images-2" src="gallery/nierozkladana2.jpg"><a class="ikony" href="#"></a><p class="describe2">Nierozkładana-2</p></div>
+ 
+</div>
+
+</div>
+
+  <a href="javascript:void(0);" class="icon" >
+   Wybieram
+  </a>
+</div> 
+
+
+</div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="gallery/naroznik1.jpg">
+  </div>
+</div>
+
+
+<div id="myModal2" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="gallery/naroznik2.jpg">
+  </div>
+</div>
+
+<div id="myModal3" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="gallery/wersalka1.jpg">
+  </div>
+</div>
+
+<div id="myModal4" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="gallery/wersalka2.jpg">
+  </div>
+</div>
+
+<div id="myModal5" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="gallery/nierozkladana1.jpg">
+  </div>
+</div>
+
+<div id="myModal6" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="gallery/nierozkladana2.jpg">
+  </div>
+</div>
+
+
+
+
+
+<script>
+
+// Get the modal
+var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("myModal2");
+var modal3 = document.getElementById("myModal3");
+var modal4 = document.getElementById("myModal4");
+var modal5 = document.getElementById("myModal5");
+var modal6 = document.getElementById("myModal6");
+
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myMod1");
+var btn2 = document.getElementById("myMod2");
+var btn3 = document.getElementById("myMod3");
+var btn4 = document.getElementById("myMod4");
+var btn5 = document.getElementById("myMod5");
+var btn6 = document.getElementById("myMod6");
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+
+btn3.onclick = function() {
+  modal3.style.display = "block";
+}
+
+btn4.onclick = function() {
+  modal4.style.display = "block";
+}
+
+btn5.onclick = function() {
+  modal5.style.display = "block";
+}
+
+btn6.onclick = function() {
+  modal6.style.display = "block";
+}
+ 
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+span.onclick = function() {
+  modal2.style.display = "none";
+}
+
+span.onclick = function() {
+  modal3.style.display = "none";
+}
+
+span.onclick = function() {
+  modal4.style.display = "none";
+}
+
+span.onclick = function() {
+  modal5.style.display = "none";
+}
+
+span.onclick = function() {
+  modal6.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal3.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+</body>
+</html> 
